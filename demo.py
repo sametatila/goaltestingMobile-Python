@@ -1,0 +1,1 @@
+print(len("structure and writting expression"))
