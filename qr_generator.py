@@ -15,7 +15,7 @@ def generate_qr_code(text, width, height):
     img.save("qr_code.png")
 
 # Example usage
-text = "proctor/27-03-2024/2/28 Nolu Derslik"
+text = "proctor/26-03-2024/Bilfen Cayyolu Ilkokulu/1/4-A"
 width = 300
 height = 300
 generate_qr_code(text, width, height)
