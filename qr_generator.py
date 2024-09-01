@@ -12,10 +12,11 @@ def generate_qr_code(text, width, height):
 
     img = qr.make_image(fill_color="black", back_color="white")
     img = img.resize((width, height))
-    img.save("qr_code.png")
+    text = text.replace("/", "-")
+    img.save(f"./{text}.png")
 
 # Example usage
-text = "proctor/26-03-2024/Bilfen Cayyolu Ilkokulu/1/4-A"
+text = "proctor/25-03-2024/Bilfen Esensehir Ilkokulu/3/Salon 1"
 width = 300
 height = 300
 generate_qr_code(text, width, height)

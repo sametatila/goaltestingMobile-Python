@@ -57,7 +57,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # Add sample query data to SessionDetailsModel
-session_details = SessionDetailsModel(test_date='2022-01-01', institution='Sample Institution', session_by_tca=1)
+session_details = SessionDetailsModel(session_id=100005,test_date='2022-01-02', institution='Sample Institution', session_by_tca=1)
 session.add(session_details)
 session.commit()
 

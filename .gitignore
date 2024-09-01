@@ -1,2 +1,4 @@
 /database_models/database_url.py
 *.csv
+*.png
+*.jpg
