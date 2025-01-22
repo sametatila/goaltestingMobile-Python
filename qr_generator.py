@@ -2,7 +2,7 @@ import qrcode
 
 def generate_qr_code(text, width, height):
     qr = qrcode.QRCode(
-        version=3,
+        version=2,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
         box_size=10,
         border=2,
@@ -16,7 +16,7 @@ def generate_qr_code(text, width, height):
     img.save(f"./{text}.png")
 
 # Example usage
-text = "proctor/25-03-2024/Bilfen Esensehir Ilkokulu/3/Salon 1"
+text = "proctor/26-03-2024/Bilfen Cayyolu Ilkokulu/1/4-A"
 width = 300
 height = 300
 generate_qr_code(text, width, height)

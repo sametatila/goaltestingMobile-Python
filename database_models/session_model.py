@@ -45,6 +45,7 @@ class SessionPartModel(Base):
     session_part_time = Column(Integer)
     session_break = Column(Boolean)
     session_end = Column(Boolean)
+    session_main_end = Column(Boolean)
 
     # Relationship to SessionDetailsModel
     session_details = relationship("SessionDetailsModel", back_populates="session_parts")

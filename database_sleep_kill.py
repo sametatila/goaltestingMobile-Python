@@ -24,7 +24,7 @@ with engine.connect() as connection:
     """))
     sleep_connections = result.fetchall()
 
-    kapat = 0
+    kapat = 1
 
     # Uyku modundaki bağlantıları ve detaylarını listeleme
     for row in sleep_connections:

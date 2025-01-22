@@ -37,16 +37,4 @@ class SeasonPlanModel(Base):
 Base.metadata.create_all(engine)
 
 print("Table created successfully")
-with engine.connect() as connection:
-    # Uyku modundaki bağlantıları listeleme
-    result = connection.execute(text("SELECT id FROM information_schema.processlist WHERE Command = 'Sleep';"))
-    sleep_connections = result.fetchall()
-
-    # Uyku modundaki bağlantıları kapatma
-    for conn_id in sleep_connections:
-        print(f"Kapatılan bağlantı ID'si: {conn_id[0]}")
-        # connection.execute(text(f"KILL {conn_id[0]};"))
-
-# Bağlantıyı kapat
-engine.dispose()
 
